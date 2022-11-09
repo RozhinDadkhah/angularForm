@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.big-box {
+    width: 90%;
+    height: 90%;
+    background-color: #247881;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    box-shadow: 0px 17px 21px -2px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 0px 17px 21px -2px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 17px 21px -2px rgba(0, 0, 0, 0.43);
+}
+
+.box {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+label {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+
+input {
+    padding: 10px 0;
+    border: none;
+    border: 1px solid #9DDAC6;
+    outline: none;
+    width: 90%;
+    font-size: 14px;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+.gender {
+    padding: 10px 0;
+}
+
+.g {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.gender input {
+    width: auto;
+}
+
+.gender label {
+    padding: 5px 6px;
+}
+
+.active {
+    width: 40%;
+    background-color: #247881;
+    border: none;
+    color: white;
+    padding: 1%;
+    cursor: pointer;
+    transition: 0.8s;
+    font-size: 20px;
+    border: 1px solid #247881;
+    margin-top: 2%;
+    border-radius: 4%;
+}
+
+.active:hover {
+    background-color: white;
+    color: #247881;
+    border: 1px solid #247881;
+}
+
+.result-active {
+    width: 45%;
+    height: 50%;
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 5%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.result-active p {
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+h1 {
+    color: white;
+    padding: 2% 0;
+    font-size: 20px;
+}
+
+img {
+    height: 66%;
+}
+
+.closeOpen {
+    position: absolute;
+    top: 7%;
+    right: 2%;
+    width: 7%;
+    height: 13%;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    .box {
+        width: 60%;
+        height: 65%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    img {
+        display: none;
+    }
+
+    .result-active p {
+        font-size: 14px;
+    }
+
+    .closeOpen {
+        width: 12%;
+        height: 15%;
+    }
+}
